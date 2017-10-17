@@ -36,7 +36,7 @@ Example Playbook
 - hosts: all
   become: true
   roles:
-    - { role: mailcatcher, mailcatcher_postfix_disabled: True, mailcatcher_smtp_port: 25, mailcatcher_http_ip: 0.0.0.0, mailcatcher_http_port: 1080 }
+    - { role: galaxy-mailcatcher, mailcatcher_postfix_disabled: True, mailcatcher_smtp_port: 25, mailcatcher_http_ip: 0.0.0.0, mailcatcher_http_port: 1080 }
 ```
 
 License
