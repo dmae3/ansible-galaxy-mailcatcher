@@ -1,0 +1,12 @@
+---
+- name: disable postfix
+  systemd: name=postfix state=stopped enabled=no
+  when: mailcatcher_postfix_disabled == True
+  ignore_errors: True
+
+- name: install mailcather
+  gem: name=mailcatcher version={{ mailcatcher_version }} user_install=no state=present
+
+- name: put service configuration
+  template: src=mailcatcher.service.j2 dest=/usr/lib/systemd/system/mailcatcher.service owner=root group=root mode=0775
+  notify: restart mailcatcher

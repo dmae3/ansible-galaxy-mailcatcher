@@ -1,0 +1,6 @@
+---
+mailcatcher_postfix_disabled: False
+mailcatcher_version: 0.6.4
+mailcatcher_smtp_port: 25
+mailcatcher_http_ip: 0.0.0.0
+mailcatcher_http_port: 1080
