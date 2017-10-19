@@ -26,7 +26,7 @@ Mailcatcher http port
 Dependencies
 ------------
 
-[ruby](https://github.com/dmae3/ansible-galaxy-ruby.git "ruby")
+[galaxy-ruby](https://github.com/dmae3/ansible-galaxy-ruby.git "galaxy-ruby")
 
 Example Playbook
 ----------------
